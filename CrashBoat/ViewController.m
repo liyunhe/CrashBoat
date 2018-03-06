@@ -17,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    // app名称
+    NSString *app_Name = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    
     self.webView.scalesPageToFit = YES;
     self.webView.scrollView.bouncesZoom = NO;
     self.webView.dataDetectorTypes = UIDataDetectorTypePhoneNumber;

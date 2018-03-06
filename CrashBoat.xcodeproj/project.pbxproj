@@ -15,6 +15,7 @@
 		408B35B3204E5FAD00A7A13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 408B35B2204E5FAD00A7A13A /* main.m */; };
 		6A08DE4A204E77C0001B8119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE4C204E77C0001B8119 /* InfoPlist.strings */; };
 		6A08DE50204E7A0F001B8119 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE52204E7A0F001B8119 /* Localizable.strings */; };
+		6A08DE55204E82B1001B8119 /* Date.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE54204E82B1001B8119 /* Date.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6A08DE4D204E77D5001B8119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A08DE51204E7A0F001B8119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A08DE53204E7A10001B8119 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6A08DE54204E82B1001B8119 /* Date.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Date.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				408B35AC204E5FAD00A7A13A /* Assets.xcassets */,
 				408B35AE204E5FAD00A7A13A /* LaunchScreen.storyboard */,
 				408B35B1204E5FAD00A7A13A /* Info.plist */,
+				6A08DE54204E82B1001B8119 /* Date.plist */,
 				6A08DE4C204E77C0001B8119 /* InfoPlist.strings */,
 				6A08DE52204E7A0F001B8119 /* Localizable.strings */,
 				408B35B2204E5FAD00A7A13A /* main.m */,
@@ -140,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A08DE55204E82B1001B8119 /* Date.plist in Resources */,
 				6A08DE50204E7A0F001B8119 /* Localizable.strings in Resources */,
 				408B35B0204E5FAD00A7A13A /* LaunchScreen.storyboard in Resources */,
 				6A08DE4A204E77C0001B8119 /* InfoPlist.strings in Resources */,
@@ -314,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;
@@ -327,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;

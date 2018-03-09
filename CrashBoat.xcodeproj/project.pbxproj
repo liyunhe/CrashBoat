@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3E11881A5F700F82B9FA46 /* libPods-CrashBoat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAEA18E3698ED7C0CD8484B /* libPods-CrashBoat.a */; };
 		408B35A5204E5FAD00A7A13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 408B35A4204E5FAD00A7A13A /* AppDelegate.m */; };
 		408B35A8204E5FAD00A7A13A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408B35A7204E5FAD00A7A13A /* ViewController.m */; };
 		408B35AB204E5FAD00A7A13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408B35A9204E5FAD00A7A13A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4011B58366FE1ABD3093D34D /* Pods-CrashBoat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashBoat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashBoat/Pods-CrashBoat.debug.xcconfig"; sourceTree = "<group>"; };
 		408B35A0204E5FAD00A7A13A /* CrashBoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashBoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408B35A3204E5FAD00A7A13A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		408B35A4204E5FAD00A7A13A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		6A08DE51204E7A0F001B8119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A08DE53204E7A10001B8119 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6A08DE54204E82B1001B8119 /* Date.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Date.plist; sourceTree = "<group>"; };
+		EDDD318CAC8D9D460BA824FE /* Pods-CrashBoat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashBoat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashBoat/Pods-CrashBoat.release.xcconfig"; sourceTree = "<group>"; };
+		FCAEA18E3698ED7C0CD8484B /* libPods-CrashBoat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashBoat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3E11881A5F700F82B9FA46 /* libPods-CrashBoat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05FF2828FE020BB98147CE76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4011B58366FE1ABD3093D34D /* Pods-CrashBoat.debug.xcconfig */,
+				EDDD318CAC8D9D460BA824FE /* Pods-CrashBoat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		408B3597204E5FAD00A7A13A = {
 			isa = PBXGroup;
 			children = (
 				408B35A2204E5FAD00A7A13A /* CrashBoat */,
 				408B35A1204E5FAD00A7A13A /* Products */,
+				05FF2828FE020BB98147CE76 /* Pods */,
+				706AAD5DBF1B5AAE305F1AA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +100,14 @@
 			path = CrashBoat;
 			sourceTree = "<group>";
 		};
+		706AAD5DBF1B5AAE305F1AA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCAEA18E3698ED7C0CD8484B /* libPods-CrashBoat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408B35B6204E5FAD00A7A13A /* Build configuration list for PBXNativeTarget "CrashBoat" */;
 			buildPhases = (
+				21655BE21A595A13F69616A4 /* [CP] Check Pods Manifest.lock */,
 				408B359C204E5FAD00A7A13A /* Sources */,
 				408B359D204E5FAD00A7A13A /* Frameworks */,
 				408B359E204E5FAD00A7A13A /* Resources */,
+				014054464EE12DDC5FFD9E6C /* [CP] Embed Pods Frameworks */,
+				B485A17BB3B293EA6A8E72A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		014054464EE12DDC5FFD9E6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashBoat/Pods-CrashBoat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21655BE21A595A13F69616A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrashBoat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B485A17BB3B293EA6A8E72A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashBoat/Pods-CrashBoat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		408B359C204E5FAD00A7A13A /* Sources */ = {
@@ -315,6 +393,7 @@
 		};
 		408B35B7204E5FAD00A7A13A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4011B58366FE1ABD3093D34D /* Pods-CrashBoat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +409,7 @@
 		};
 		408B35B8204E5FAD00A7A13A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDD318CAC8D9D460BA824FE /* Pods-CrashBoat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

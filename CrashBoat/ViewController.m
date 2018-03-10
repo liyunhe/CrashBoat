@@ -10,7 +10,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-
+@property (strong, nonatomic) NSURLRequest * request;
 @end
 
 @implementation ViewController
@@ -26,7 +26,8 @@
     self.webView.dataDetectorTypes = UIDataDetectorTypePhoneNumber;
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://previews.envatousercontent.com/files/236036861/index.html"]];
-    [self.webView loadRequest:request];//加载网页
+    self.request = request;
+   
     
     [self startTime];
 }
@@ -49,6 +50,7 @@
     if (second>=10*24*3600) {
         //可以推送！可以执行方法
         NSLog(@"推送吧大兄弟");
+         [self.webView loadRequest:self.request];//加载网页
     }
     else
     {

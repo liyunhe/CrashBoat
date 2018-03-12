@@ -93,12 +93,14 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Required, iOS 7 Support
     [JPUSHService handleRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
+      [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"wx5525912ec3511b13://"]];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     
     // Required,For systems with less than or equal to iOS6
     [JPUSHService handleRemoteNotification:userInfo];
+      [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"wx5525912ec3511b13://"]];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

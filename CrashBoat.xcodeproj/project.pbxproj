@@ -17,6 +17,10 @@
 		6A08DE4A204E77C0001B8119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE4C204E77C0001B8119 /* InfoPlist.strings */; };
 		6A08DE50204E7A0F001B8119 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE52204E7A0F001B8119 /* Localizable.strings */; };
 		6A08DE55204E82B1001B8119 /* Date.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A08DE54204E82B1001B8119 /* Date.plist */; };
+		6A098DB620567715006E5DFF /* SiHomeMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A098DB520567715006E5DFF /* SiHomeMainCell.m */; };
+		6A098DB920567877006E5DFF /* SiHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A098DB720567876006E5DFF /* SiHomeModel.m */; };
+		6A098DBD20567A95006E5DFF /* SiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A098DBB20567A95006E5DFF /* SiViewController.m */; };
+		6A098DBE20567A95006E5DFF /* SiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A098DBC20567A95006E5DFF /* SiViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,13 @@
 		6A08DE51204E7A0F001B8119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A08DE53204E7A10001B8119 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6A08DE54204E82B1001B8119 /* Date.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Date.plist; sourceTree = "<group>"; };
+		6A098DB420567714006E5DFF /* SiHomeMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiHomeMainCell.h; sourceTree = "<group>"; };
+		6A098DB520567715006E5DFF /* SiHomeMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiHomeMainCell.m; sourceTree = "<group>"; };
+		6A098DB720567876006E5DFF /* SiHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiHomeModel.m; sourceTree = "<group>"; };
+		6A098DB820567876006E5DFF /* SiHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiHomeModel.h; sourceTree = "<group>"; };
+		6A098DBA20567A95006E5DFF /* SiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiViewController.h; sourceTree = "<group>"; };
+		6A098DBB20567A95006E5DFF /* SiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiViewController.m; sourceTree = "<group>"; };
+		6A098DBC20567A95006E5DFF /* SiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiViewController.xib; sourceTree = "<group>"; };
 		EDDD318CAC8D9D460BA824FE /* Pods-CrashBoat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashBoat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashBoat/Pods-CrashBoat.release.xcconfig"; sourceTree = "<group>"; };
 		FCAEA18E3698ED7C0CD8484B /* libPods-CrashBoat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashBoat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +101,13 @@
 				408B35A4204E5FAD00A7A13A /* AppDelegate.m */,
 				408B35A6204E5FAD00A7A13A /* ViewController.h */,
 				408B35A7204E5FAD00A7A13A /* ViewController.m */,
+				6A098DBA20567A95006E5DFF /* SiViewController.h */,
+				6A098DBB20567A95006E5DFF /* SiViewController.m */,
+				6A098DBC20567A95006E5DFF /* SiViewController.xib */,
+				6A098DB820567876006E5DFF /* SiHomeModel.h */,
+				6A098DB720567876006E5DFF /* SiHomeModel.m */,
+				6A098DB420567714006E5DFF /* SiHomeMainCell.h */,
+				6A098DB520567715006E5DFF /* SiHomeMainCell.m */,
 				408B35A9204E5FAD00A7A13A /* Main.storyboard */,
 				408B35AC204E5FAD00A7A13A /* Assets.xcassets */,
 				408B35AE204E5FAD00A7A13A /* LaunchScreen.storyboard */,
@@ -181,6 +199,7 @@
 				6A08DE50204E7A0F001B8119 /* Localizable.strings in Resources */,
 				408B35B0204E5FAD00A7A13A /* LaunchScreen.storyboard in Resources */,
 				6A08DE4A204E77C0001B8119 /* InfoPlist.strings in Resources */,
+				6A098DBE20567A95006E5DFF /* SiViewController.xib in Resources */,
 				408B35AD204E5FAD00A7A13A /* Assets.xcassets in Resources */,
 				408B35AB204E5FAD00A7A13A /* Main.storyboard in Resources */,
 			);
@@ -244,7 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A098DBD20567A95006E5DFF /* SiViewController.m in Sources */,
 				408B35A8204E5FAD00A7A13A /* ViewController.m in Sources */,
+				6A098DB920567877006E5DFF /* SiHomeModel.m in Sources */,
+				6A098DB620567715006E5DFF /* SiHomeMainCell.m in Sources */,
 				408B35B3204E5FAD00A7A13A /* main.m in Sources */,
 				408B35A5204E5FAD00A7A13A /* AppDelegate.m in Sources */,
 			);
@@ -408,7 +430,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +450,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

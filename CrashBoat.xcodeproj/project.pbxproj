@@ -408,13 +408,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f77e7168-f193-48de-a16d-31bb9f54c37b";
 				PROVISIONING_PROFILE_SPECIFIER = Mrlee.CrashBoat;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,17 +424,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CrashBoat/CrashBoat.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9HLG2RNPTE;
 				INFOPLIST_FILE = CrashBoat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mrlee.CrashBoat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f77e7168-f193-48de-a16d-31bb9f54c37b";
-				PROVISIONING_PROFILE_SPECIFIER = Mrlee.CrashBoat;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "7db7dcbb-2fce-4b67-b40d-0eeea557d428";
+				PROVISIONING_PROFILE_SPECIFIER = discC;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
